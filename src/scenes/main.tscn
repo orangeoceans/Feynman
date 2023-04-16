@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dme65crcbitkk"]
+
+[ext_resource type="PackedScene" uid="uid://p615h1ua0oc5" path="res://src/scenes/vertex.tscn" id="1_4i5r2"]
+
+[node name="main" type="Node2D"]
+
+[node name="vertex" parent="." instance=ExtResource("1_4i5r2")]
+position = Vector2(177, 123)
