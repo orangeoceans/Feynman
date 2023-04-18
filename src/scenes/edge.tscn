@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://212yj8eogakd"]
+[gd_scene load_steps=3 format=3 uid="uid://212yj8eogakd"]
 
-[ext_resource type="Texture2D" uid="uid://b71f3wjm7igfj" path="res://assets/sprites/line.png" id="1_6v6l5"]
+[ext_resource type="Script" path="res://src/scripts/Edge.cs" id="1_eg6bs"]
+[ext_resource type="Texture2D" uid="uid://b71f3wjm7igfj" path="res://assets/sprites/line.png" id="1_gs8kt"]
 
-[node name="edge" type="Node2D"]
+[node name="Edge" type="Node2D"]
+script = ExtResource("1_eg6bs")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_6v6l5")
+texture = ExtResource("1_gs8kt")

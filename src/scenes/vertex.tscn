@@ -1,19 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://p615h1ua0oc5"]
+[gd_scene load_steps=4 format=3 uid="uid://byvthg4vecrrc"]
 
-[ext_resource type="Texture2D" uid="uid://bcd34dfewubp" path="res://assets/sprites/vertex.png" id="1_fwwpn"]
-[ext_resource type="Script" path="res://src/scripts/vertex.cs" id="1_tcudy"]
+[ext_resource type="Script" path="res://src/scripts/Vertex.cs" id="1_4c4il"]
+[ext_resource type="Texture2D" uid="uid://bcd34dfewubp" path="res://assets/sprites/vertex.png" id="2_unk13"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2ds13"]
-radius = 11.0
+radius = 22.0
 
-[node name="vertex" type="Node2D"]
-script = ExtResource("1_tcudy")
+[node name="Vertex" type="Node2D"]
+script = ExtResource("1_4c4il")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 texture_filter = 1
-texture = ExtResource("1_fwwpn")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_unk13")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_2ds13")

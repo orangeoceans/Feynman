@@ -1,8 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dme65crcbitkk"]
+[gd_scene load_steps=2 format=3 uid="uid://26vl2sn0yt1u"]
 
-[ext_resource type="PackedScene" uid="uid://p615h1ua0oc5" path="res://src/scenes/vertex.tscn" id="1_4i5r2"]
+[ext_resource type="PackedScene" uid="uid://b2blccjcmxu84" path="res://src/scenes/DiagramManager.tscn" id="1_wx8j3"]
 
-[node name="main" type="Node2D"]
+[node name="Main" type="Node2D"]
 
-[node name="vertex" parent="." instance=ExtResource("1_4i5r2")]
-position = Vector2(177, 123)
+[node name="DiagramManager" parent="." instance=ExtResource("1_wx8j3")]
